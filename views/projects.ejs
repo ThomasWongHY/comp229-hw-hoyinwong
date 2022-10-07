@@ -7,13 +7,46 @@
   <main class="container">
     <div class="jumbotron">
       <h1 class="display-4">Welcome to <%= title %> page</h1>
-      <img src="../public/Assets/images/proj1.png">
-      <img src="../public/Assets/images/proj1a.png">
-      <img src="../public/Assets/images/proj1b.png">
-      <img src="../public/Assets/images/proj2.png">
-      <img src="../public/Assets/images/proj2a.png">
-      <img src="../public/Assets/images/proj3.png">
-      <img src="../public/Assets/images/proj3a.png">
+      <h2>Project Description</h2>
+      
+      <button class="projdesc">Project 1</button>
+      <div class="panel">
+        <p>This project is to optimize the route between multiple stops by considering two objectives, Time and Cost.</p>
+        <img src="./Assets/images/proj1.png" width="400" height="300">
+        <img src="./Assets/images/proj1b.png" width="400" height="300">
+      </div>
+        
+      <button class="projdesc">Project 2</button>
+      <div class="panel">
+        <p>This project is to plot the regression line and historical diagram with the insurance dataset.</p>
+        <img src="./Assets/images/proj2.png" width="400" height="300">
+        <img src="./Assets/images/proj2a.png" width="400" height="300">
+      </div>
+      
+      <button class="projdesc">Project 3</button>
+      <div class="panel">
+        <p>This project is to analyze the corelation and linear relationship within the bank dataset.</p>
+        <img src="./Assets/images/proj3.png" width="400" height="300">
+        <img src="./Assets/images/proj3a.png" width="400" height="300">
+      </div>
+
+      <script>
+        var acc = document.getElementsByClassName("projdesc");
+        var i;
+        
+        for (i = 0; i < acc.length; i++) {
+          acc[i].addEventListener("click", function() {
+            this.classList.toggle("active");
+            var panel = this.nextElementSibling;
+            if (panel.style.display === "block") {
+              panel.style.display = "none";
+            } else {
+              panel.style.display = "block";
+            }
+          });
+        }
+        </script>
+
     </div>
   </main>
 
