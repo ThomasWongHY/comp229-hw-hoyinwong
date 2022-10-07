@@ -1,0 +1,21 @@
+<%- include partials/header.ejs %>
+
+<%- include partials/main_nav.ejs %>
+  
+
+  <!-- Main Content -->
+  <main class="container">
+    <div class="jumbotron">
+      <h1 class="display-4">Welcome to <%= title %> page</h1>
+      <div class="btn-group">
+        <button type="button" class="btn btn-primary" onclick="location.href='./aboutme'">About Me</button>
+        <button type="button" class="btn btn-primary" onclick="location.href='./projects'">Projects</button>
+        <button type="button" class="btn btn-primary" onclick="location.href='./sevices'">Services</button>
+        <button type="button" class="btn btn-primary" onclick="location.href='./contactme'">Contact Me</button>
+      </div>
+    </div>
+  </main>
+
+<%- include partials/bottom_nav.ejs %>  
+
+<%- include partials/footer.ejs %>

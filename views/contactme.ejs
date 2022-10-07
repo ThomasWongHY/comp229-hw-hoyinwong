@@ -1,0 +1,58 @@
+<%- include partials/header.ejs %>
+
+<%- include partials/main_nav.ejs %>
+  
+
+  <!-- Main Content -->
+  <main class="container">
+    <div class="jumbotron">
+      <h1 class="display-4">Welcome to <%= title %> page</h1>
+      <div class="w3-panel w3-black w3-round-xlarge">
+        <p>Gmail: hoyinwongccacca@gmail.com</p>
+      </div>
+      <div class="w3-panel w3-black w3-round-xlarge">
+        <p>Phone: +1 (437) 260 8238</p>
+      </div>
+      <body>
+
+      <h3>Contact Form</h3>
+
+      <div class="container">
+        <form action="/action_page.php">
+          <label for="fname">First Name</label>
+          <input type="text" id="fname" name="firstname" placeholder="Surname / Given name">
+
+          <label for="lname">Last Name</label>
+          <input type="text" id="lname" name="lastname" placeholder="Family name">
+
+          <label for="contnumber">Contact Number</label>
+          <input type="text" id="contnumber" name="contactnumber" placeholder="+1 (234) 5678">
+
+          <label for="email">Email Address</label>
+          <input type="text" id="email" name="email" placeholder="abc@example.com">
+
+          <label for="message">Message</label>
+          <textarea id="message" name="message" placeholder="Your message" style="height:200px"></textarea>
+
+          <button type="button" class="btn btn-primary" onclick="myFunction()">Submit</button>
+
+          <script>
+            function myFunction() {
+              if (confirm("Submission Completed!")) {
+                window.location.href="./home";
+              } 
+            }
+            </script>
+        </form>
+      </div>
+      </body>
+    </div> 
+  </main>
+<%- include partials/bottom_nav.ejs %>  
+
+<%- include partials/footer.ejs %>
+  
+
+
+
+

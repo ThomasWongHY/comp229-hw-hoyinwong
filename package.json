@@ -1,5 +1,5 @@
 {
-  "name": "comp229-f2020-week3",
+  "name": "comp229-week3-hoyinwong",
   "version": "0.0.1",
   "private": true,
   "scripts": {
@@ -21,13 +21,14 @@
     "morgan": "~1.9.1",
     "popper.js": "^1.16.1"
   },
-  "description": "demo app for COMP229 Week 3",
+  "description": "COMP229 Assigment 1",
   "main": "index.js",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/ThomasWongHY/comp229-week3-hoyinwong.git"
   },
   "author": "Tom Tsiliopoulos",
+  "editor": "Ho Yin Wong",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/ThomasWongHY/comp229-week3-hoyinwong/issues"
