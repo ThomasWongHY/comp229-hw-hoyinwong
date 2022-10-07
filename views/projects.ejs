@@ -7,50 +7,13 @@
   <main class="container">
     <div class="jumbotron">
       <h1 class="display-4">Welcome to <%= title %> page</h1>
-      <div class="tab">
-        <button class="tablinks" onmouseover="description(event, 'Project 1')">Route Optimization</button>
-        <button class="tablinks" onmouseover="description(event, 'Project 2')">Machine Learning (Insurance)</button>
-        <button class="tablinks" onmouseover="description(event, 'Project 3')">Machine Learning (Bank)</button>
-      </div>
-      
-      <div id="Project 1" class="tabcontent">
-        <h3>Route Optimization</h3>
-        <p>This project is to optimize the route between multiple spot in Hong Kong by considering two objective functions, Cost and Time</p>
-        <img src="./Assets/images/proj1.png" width="400" height="300">
-        <img src="./Assets/images/proj1b.png" width="400" height="300">
-      </div>
-      
-      <div id="Project 2" class="tabcontent">
-        <h3>Machine Learning (Insurance)</h3>
-        <p>This project is to plot regression line and historial diagram in an insurance dataset</p> 
-        <img src="./Assets/images/proj2.png" width="400" height="300">
-        <img src="./Assets/images/proj2a.png" width="400" height="300">
-      </div>
-      
-      <div id="Project 3" class="tabcontent">
-        <h3>Machine Learning (Bank)</h3>
-        <p>This project is to analyze the correction and relationship in a bank dataset</p>
-        <img src="./Assets/images/proj3.png" width="400" height="300">
-        <img src="./Assets/images/proj3a.png" width="400" height="300">
-      </div>
-      
-      <div class="clearfix"></div>
-      
-      <script>
-      function description(evt, projNumber) {
-        var i, tabcontent, tablinks;
-        tabcontent = document.getElementsByClassName("tabcontent");
-        for (i = 0; i < tabcontent.length; i++) {
-          tabcontent[i].style.display = "none";
-        }
-        tablinks = document.getElementsByClassName("tablinks");
-        for (i = 0; i < tablinks.length; i++) {
-          tablinks[i].className = tablinks[i].className.replace(" active", "");
-        }
-        document.getElementById(projNumber).style.display = "block";
-        evt.currentTarget.className += " active";
-      }
-      </script>
+      <img src="../public/Assets/images/proj1.png">
+      <img src="../public/Assets/images/proj1a.png">
+      <img src="../public/Assets/images/proj1b.png">
+      <img src="../public/Assets/images/proj2.png">
+      <img src="../public/Assets/images/proj2a.png">
+      <img src="../public/Assets/images/proj3.png">
+      <img src="../public/Assets/images/proj3a.png">
     </div>
   </main>
 
