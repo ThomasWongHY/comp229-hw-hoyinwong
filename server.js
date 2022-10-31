@@ -3,13 +3,13 @@
          File Name: server.js
     Student's Name: Ho Yin Wong
          StudentID: 301290744
-              Date: 6 October 2022
+              Date: 28 October 2022
 */
 /**
  * Module dependencies.
  */
 
-var app = require('./app');
+var app = require('./server/config/app');
 var debug = require('debug')('week-4:server');
 var http = require('http');
 
