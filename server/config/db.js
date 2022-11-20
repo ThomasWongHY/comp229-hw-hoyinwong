@@ -7,5 +7,5 @@
 module.exports = 
 {
      // "URI": "mongodb://localhost/book_store"
-     "URI": "mongodb+srv://hoyinwong:4mTZJ1u694W38hXn@cluster0.t9oxwmh.mongodb.net/contact_list?retryWrites=true&w=majority"
+     "URI": "mongodb+srv://hoyinwong:zjWeflkrgRBCprHa@cluster0.t9oxwmh.mongodb.net/contact_list?retryWrites=true&w=majority"
 }
